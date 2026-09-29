@@ -144,22 +144,6 @@ node zcode-bg.mjs --off                移除注入并结束注入器，恢复�
 4. `Page.addScriptToEvaluateOnNewDocument` 保证刷新/新窗口持续生效；注入器每 2 秒巡检新窗口，ZCode 退出后自动收工，另有看门狗兜底自愈；
 5. 退出注入器 / `恢复默认外观.cmd` / 正常重启 ZCode，三者任一都完全恢复原样。
 
-## 🆚 与 [Zgd03/Zcode-Wallpaper](https://github.com/Zgd03/Zcode-Wallpaper) 的区别
-
-同思路先行项目（Python 启动器 + CDP 注入），本项目在其基础上做了不同取舍：
-
-| | 本项目 | Zcode-Wallpaper |
-| --- | --- | --- |
-| 正在运行的 ZCode | 可直接注入（`--attach`），不用重启 | 必须重启 ZCode |
-| 运行依赖 | 无（单文件 Node 脚本） | 需要 Python |
-| 调参数 | 应用内「壁纸」页，滑杆即时预览 | 应用外 Python GUI |
-| Wallpaper Engine 工坊 | 深度适配（见上节）：场景包纹理抽取、内嵌视频、网页型原生渲染、随时间换段、导入/隐藏管理 | — |
-| 透明化 | 面板「🔍 扫描」点开关 + 每块区域 🎨 调色，不用懂 CSS | 手写选择器配置 |
-| 手动改 config | ≈2 秒热生效 | 3 秒轮询 |
-| 排查工具 | `--check/--off/--selftest/--diagnose/--probe/--screenshot` | `--probe` / `--shot` |
-
-一句话：它是「外部启动器」——每次都接管 ZCode 的生死；本项目是「寄生」——ZCode 该怎么开还怎么开，注入器只是旁边一个可随时退出的旁观者，所有定制都在应用内「壁纸」页完成。
-
 ## 📄 声明
 
 - 本项目与 ZCode 官方无关，仅为个人工具；Wallpaper Engine 是 Valve/Steam 相关商标。
