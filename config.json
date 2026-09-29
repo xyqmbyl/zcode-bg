@@ -1,0 +1,17 @@
+{
+  "zcodeExe": "",
+  "wallpaper": "wallpaper\sample-gradient.png",
+  "enabled": true,
+  "showSettingsUI": true,
+  "panelAlpha": 0.62,
+  "dim": 0.25,
+  "fit": "cover",
+  "align": "center",
+  "videoMuted": true,
+  "videoSpeed": 1,
+  "videoPauseWhenHidden": true,
+  "mediaPort": 18765,
+  "autoTranslucent": true,
+  "extraCss": "",
+  "overrides": []
+}
